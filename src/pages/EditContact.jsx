@@ -71,82 +71,77 @@ const EditContact = () => {
 
   return (
     <>
-      {loading ? (
-        <Spinner splash="Loading Contact..." />
-      ) : (
-        <>
 
 
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="nameInput" className="form-label mt-4">
-                Name Of Person
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="nameInput"
-                name="name"
-                value={userDetails.name}
-                onChange={handleInputChange}
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="addressInput" className="form-label mt-4">
-                Address Of Person
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="addressInput"
-                name="address"
-                value={userDetails.address}
-                onChange={handleInputChange}
-                placeholder="WalkStreet 05, California"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="emailInput" className="form-label mt-4">
-                Email Of Person
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="emailInput"
-                name="email"
-                value={userDetails.email}
-                onChange={handleInputChange}
-                placeholder="johndoe@example.com"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="phoneInput" className="form-label mt-4">
-                Phone Number Of Person
-              </label>
-              <input
-                type="number"
-                className="form-control"
-                id="phoneInput"
-                name="phone"
-                value={userDetails.phone}
-                onChange={handleInputChange}
-                placeholder="+977 987654321"
-                required
-              />
-            </div>
-            <input
-              type="submit"
-              value="Save Changes"
-              className="btn btn-info my-2"
-            />
-          </form>
-        </>
-      )}
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="nameInput" className="form-label mt-4">
+            Name Of Person
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="nameInput"
+            name="name"
+            value={userDetails.name}
+            onChange={handleInputChange}
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="addressInput" className="form-label mt-4">
+            Address Of Person
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="addressInput"
+            name="address"
+            value={userDetails.address}
+            onChange={handleInputChange}
+            placeholder="WalkStreet 05, California"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="emailInput" className="form-label mt-4">
+            Email Of Person
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            id="emailInput"
+            name="email"
+            value={userDetails.email}
+            onChange={handleInputChange}
+            placeholder="johndoe@example.com"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phoneInput" className="form-label mt-4">
+            Phone Number Of Person
+          </label>
+          <input
+            type="number"
+            className="form-control"
+            id="phoneInput"
+            name="phone"
+            value={userDetails.phone}
+            onChange={handleInputChange}
+            placeholder="+977 987654321"
+            required
+          />
+        </div>
+        <input
+          type="submit"
+          value="Save Changes"
+          className="btn btn-info my-2"
+        />
+      </form>
     </>
+
   );
 };
 
